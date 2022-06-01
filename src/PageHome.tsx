@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
-import imagemPass from './assets/pass-alicia.png'
-import imagemAviao from './assets/aviao.png'
+
 import video from './assets/Videodoconvite.mp4'
 import musica from './assets/musicaAlicia.mp3'
+import Capa from './Capa'
+import Content from './Content'
 
 
 
@@ -15,36 +16,28 @@ function PageHome() {
 
 
     return (
-        !IsOpem ? 
+        <div className="w-ful flex justify-center items-center bg-zinc-800">
+            {
 
-            (
-                < div className="w-full bg-[#e0ceb8] h-[100vh] flex flex-col items-center justify-between" >
+                !IsOpem ? <Capa nomes={nomes} onOpem={setIsOpem}/> :
+                    <>
+                        <div className="w-full h-full relative max-w-md">
 
-                <img className='w-[25%] mb-4' src={imagemPass} alt="" />
+                            <div className="w-full h-screen  max-w-md z-0 ">
+                                <video src={video} className='min-h-screen h-screen' autoPlay loop/>
+                                <audio src={musica} autoPlay loop/>
+                            </div>
+                            <div className="w-full opacity-40 bg-zinc-700 z-10 absolute top-0 left-0 right-0 bottom-0">
 
-                <div className="w-[60%] bg-[#e7dac9] p-2 rounded-md flex flex-col">
-                    <span><span className='font-bold'>De:</span> Alicia</span>
-                    <span><span className='font-bold'>Para:</span> {nomes}</span>
-
-                </div>
-
-                <span className='w-[80%] text-center'>
-                    Olá, não consigo descrever o quanto estou feliz.
-                    Quero te convidar para comemorar comigo  o <span className='font-bold'>Batismo do Voo solo</span>  esse momento tão marcante na minha vida e a todos os pilotos que for conhecer.
-                </span>
-                <div className="w-14 bg-[#5D4840] h-14 rounded-full relative flex items-center justify-center" onClick={()=> setIsOpem(true)}>
-                    <span className='text-slate-100 text-3xl '>{">"}</span>
-                    <div className="w-14 bg-[#5D4840] h-14 rounded-full animate-ping absolute top-0 bottom-0 left-00 right-0">
-
-                    </div>
-                </div>
-
-                <img className='w-[90%] mb-8' src={imagemAviao} alt="" />
-                </div >
-            ): <div className="w-full">
-                <video src={video} autoPlay />
-                <audio src={musica} autoPlay/>
-            </div>
+                            </div>
+                            <div className="w-full z-20 absolute top-0 left-0 right-0 bottom-0">
+                                <Content/>
+                            </div>
+                        </div>
+                    </>
+            }
+        </div>
+        
             
         
     )
