@@ -7,7 +7,7 @@ function CheckIn({nomes}: any) {
 
   return (
     <div className='w-full flex justify-center shadow-md relative'>
-        <img className='w-[90%] ' src={CheckImg} alt="" />
+        <img className='w-[95%] ' src={CheckImg} alt="" />
         <div className="w-[80%] p-2 absolute top-0 bottom-0 flex flex-col">
             Passageiros:
           
