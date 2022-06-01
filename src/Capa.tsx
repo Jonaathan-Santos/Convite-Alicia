@@ -7,7 +7,7 @@ import imagemAviao from './assets/aviao.png'
 function Capa({nomes, onOpem}:  any) {
     return (
 
-        < div className="w-full max-w-md bg-[#e0ceb8] h-[100vh] flex flex-col items-center justify-between" >
+        < div className="w-full max-w-md bg-[#e0ceb8] h-full flex flex-col items-center justify-between" >
 
             <img className='w-[25%]  mb-4' src={imagemPass} alt="" />
 

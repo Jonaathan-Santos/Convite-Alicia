@@ -10,12 +10,6 @@ function App() {
 
       <Routes>
         <Route path='/:nomes'  element={<PageHome/>} />
-        
-
-
-
-  
-
       </Routes>
 
 
