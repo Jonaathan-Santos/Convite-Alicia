@@ -24,7 +24,7 @@ function PageHome() {
                         <div className="w-full h-full relative max-w-md">
 
                             <div className="w-full h-screen  max-w-md z-0 ">
-                                <video src={video} className='min-h-screen h-screen' autoPlay loop/>
+                                <video src={video} className='min-h-screen h-screen' autoPlay loop playsInline/>
                                 <audio src={musica} autoPlay loop/>
                             </div>
                             <div className="w-full opacity-40 bg-zinc-700 z-10 absolute top-0 left-0 right-0 bottom-0">

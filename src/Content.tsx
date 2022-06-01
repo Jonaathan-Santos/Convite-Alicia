@@ -40,9 +40,9 @@ function Content() {
                         }
                     </Popover.Panel>
 
-                    <Popover.Button className="w-full outline-none absolute bottom-16 flex items-center flex-col">
+                    <Popover.Button className="w-full outline-none absolute bottom-16 flex items-center flex-col cursor-none">
                         {
-                            Buttoms.map((item, index) => <div onClick={()=> setOption(item.text)} className='w-[80%]  my-2 shadow-md text-center bg-[#e7dac9] rounded-md ba' >{item.text}</div>)
+                            Buttoms.map((item, index) => <div onClick={()=> setOption(item.text)} className='w-[80%] h-10 flex items-center justify-center text-xl my-2 shadow-md text-center bg-[#e7dac9] rounded-md ba' >{item.text}</div>)
                         }
                     </Popover.Button>
 
