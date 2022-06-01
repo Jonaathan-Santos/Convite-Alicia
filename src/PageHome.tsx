@@ -25,7 +25,7 @@ function PageHome() {
 
                             <div className="w-full h-full max-w-md z-0">
                                 <video src={video}  autoPlay loop playsInline/>
-                                <audio src={musica}  loop/>
+                                <audio src={musica} autoPlay  loop/>
                             </div>
                             <div className="w-full opacity-40 bg-zinc-700 z-10 absolute top-0 left-0 right-0 bottom-0">
 
