@@ -30,7 +30,7 @@ function Capa({nomes, onOpem}:  any) {
                 </div>
             </div>
 
-            <img className='w-[90%] mb-8' src={imagemAviao} alt="" />
+            <img className='w-[90%] mb-8' src={imagemAviao} alt="teste" />
         </div >
 
     )
