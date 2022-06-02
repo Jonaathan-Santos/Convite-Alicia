@@ -6,12 +6,23 @@
   <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Passaporte</title>
-  <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="theme-color" content="#e7dac9">
-  <meta name="msapplication-navbutton-color" content="#e7dac9">
+
   <!-- iOS Safari -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <script>
+    isIOS7 = function () {
+      return navigator.userAgent.match(/(iPad|iPhone|iPod touch);.*CPU.*OS 7_\d/i);
+    };
+    isStandaloneAndIOS7 = function () {
+      return isIOS7() && window.navigator.standalone;
+    };
+    if (isStandaloneAndIOS7()) {
+      body = document.getElementsByTagName("body")[0];
+      body.className = body.className + " standalone";
+    }
+  </script>
 
 </head>
 
