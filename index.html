@@ -8,25 +8,33 @@
   <title>Passaporte</title>
   <meta name="theme-color" content="#e7dac9">
 
+
+
   <!-- iOS Safari -->
+  <link name="apple-toch-icon" content="./assets/check.png">
+  <link name="manifest" content="manifest.webmanifest">
+  <link name="canonical" href="https://passaporte-alicia.netlify.app">
+  
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <script>
-    isIOS7 = function () {
-      return navigator.userAgent.match(/(iPad|iPhone|iPod touch);.*CPU.*OS 7_\d/i);
-    };
-    isStandaloneAndIOS7 = function () {
-      return isIOS7() && window.navigator.standalone;
-    };
-    if (isStandaloneAndIOS7()) {
-      body = document.getElementsByTagName("body")[0];
-      body.className = body.className + " standalone";
-    }
-  </script>
+ 
 
 </head>
 
 <body>
+  <script>
+      if ('serviceWorker' in navigator){
+       navigator.serviceWorker.register('sw.js')
+        .then(
+          ()=>{
+            console.log('OK')
+          }
+        )
+        .catch(
+          ()=> console.log("failed")
+        )
+      }
+  </script>
   <div id="root"></div>
   <script type="module" src="/src/main.tsx"></script>
 </body>
