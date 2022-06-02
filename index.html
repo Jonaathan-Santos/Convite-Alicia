@@ -22,19 +22,7 @@
 </head>
 
 <body>
-  <script>
-      if ('serviceWorker' in navigator){
-       navigator.serviceWorker.register('sw.js')
-        .then(
-          ()=>{
-            console.log('OK')
-          }
-        )
-        .catch(
-          ()=> console.log("failed")
-        )
-      }
-  </script>
+
   <div id="root"></div>
   <script type="module" src="/src/main.tsx"></script>
 </body>

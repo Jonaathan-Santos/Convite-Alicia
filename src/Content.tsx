@@ -2,6 +2,8 @@ import { Popover } from '@headlessui/react'
 import React, { useState } from 'react'
 import headImg from './assets/headpng.png'
 import CheckIn from './CheckIn'
+import Local from './Local'
+import Sobre from './Sobre'
 
 const Buttoms = [
 
@@ -11,6 +13,9 @@ const Buttoms = [
     {
         text: 'Local'
     },
+    {
+        text: 'Sobre'
+    }
 ]
 
 function Content( {nomes}: any) {
@@ -35,8 +40,8 @@ function Content( {nomes}: any) {
 
                     <Popover.Panel className='' >
                         {
-                            Option == "Check-in"? <CheckIn nomes={nomes}/>: 
-                            Option == "Local"? <span>Local</span>: ''
+                            Option == "Check-in"? <CheckIn nomes={nomes}/>:Option == "Local"? <Local/>: Option == "Sobre"? <Sobre/>: ''
+                            
                         }
                     </Popover.Panel>
 
