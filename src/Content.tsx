@@ -35,7 +35,7 @@ function Content( {nomes}: any) {
                     O batismo é uma tradição, um banho com óleo queimado.
                 </span>
             </div>
-            <div className='w-full flex flex-col justify-center items-center flex-1'>
+            <div className='w-full flex flex-col justify-center items-center flex-1 mb-6'>
                 <Popover className="relative w-full h-full flex items-center justify-end flex-col">
 
                     <Popover.Panel className='' >

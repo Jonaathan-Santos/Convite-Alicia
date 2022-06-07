@@ -36,7 +36,7 @@ function PageHome() {
                         </div>
                     </>
             }
-            <div className="w-3 h-[7%]">.</div>
+            
             
         </div>
         
