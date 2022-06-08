@@ -21,7 +21,7 @@ function Capa({nomes, onOpem}:  any) {
 
             <span className='w-[80%] text-center'>
                 Olá, não consigo descrever o quanto estou feliz.
-                Quero te convidar para comemorar comigo  o <span className='font-bold'>Batismo do Voo solo</span>  esse momento tão marcante na minha vida e a todos os pilotos.
+                Quero te convidar para comemorar comigo  o <span className='font-bold'>Batismo do Voo solo</span>  esse momento tão marcante na vida de um piloto.
             </span>
             <div className="w-14 bg-[#5D4840] h-14 rounded-full relative flex items-center justify-center" onClick={() => onOpem(true)}>
                 <span className='text-slate-100 text-3xl '>{">"}</span>

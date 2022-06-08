@@ -6,6 +6,7 @@ import {  onConfirm } from './utils/api'
 function CheckIn({ nomes }: any) {
 
     const [Confirmed, setConfirmed] = useState<boolean>(false)
+    const [Check, setCheck] = useState<boolean>(false)
 
     if(!localStorage.getItem("confirmStorage")){
       localStorage.setItem("confirmStorage", JSON.stringify({confirm: false}))
@@ -17,7 +18,7 @@ function CheckIn({ nomes }: any) {
       const {confirm} = JSON.parse(confirmStorage as string)
       setConfirmed(confirm)
 
-    }, [])
+    }, [Check])
     
 
     const passageiros = nomes.split('-')
@@ -40,12 +41,12 @@ function CheckIn({ nomes }: any) {
 
                 </div>
                 <div className="w-[70%] flex p-1 bg-[#cdbba5] text-sm ">
-                    confirme antes do dia  12/06
+                    confirme antes do dia  10/06
                 </div>
 
                 <button
                     type='button'
-                    onClick={async () => {await onConfirm("vai que é tua")}}
+                    onClick={async () => {await onConfirm("vai que é tua"); setCheck(true)}}
                     disabled={Confirmed}
                     className='bg-[#5D4840] py-1 text-[#e8d4bb] text-xl font-semibold w-[70%] rounded-md my-2'
                 >

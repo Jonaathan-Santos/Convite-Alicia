@@ -5,7 +5,7 @@ const api = axios.create({
 })
 
 export async function onConfirm (nome: string){
-  const confirmName = await  api.post('/confirm', {data: {nome}})
+  const confirmName = await  api.post('/confirm', {nome})
   console.log(confirmName)
 
   if(confirmName.data.nome == nome){
@@ -14,4 +14,4 @@ export async function onConfirm (nome: string){
   }
 }
 
-onConfirm("testando")
+
