@@ -24,6 +24,11 @@ function ConfirmadosPage() {
     getList()
 
   }, [])
+
+  useEffect(() => {
+   acess(pass, setAcess, setIncorret)
+  }, [])
+  
   
 
 
