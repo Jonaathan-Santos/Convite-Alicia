@@ -35,7 +35,7 @@ function ConfirmadosPage() {
   return (
 
 
-    <div className="w-full h-[100vh] max-w-md bg-[#e0ceb8] flex flex-col items-center justify-around" >
+    <div className="w-full h-[100vh]  max-w-md bg-[#e0ceb8] flex flex-col items-center justify-around" >
 
       {
         !Acess?
@@ -46,12 +46,12 @@ function ConfirmadosPage() {
           <div onClick={()=> {acess(pass, setAcess, setIncorret)}} className="w-[40%] bg-[#5D4840] text-[#e7dac9] rounded-md p-1 my-2 flex justify-center items-center">Confirmar</div>
         </div>
         :
-        <div className='w-full flex flex-col items-center flex-1 pt-8 text-[#5D4840]'>
+        <div className='w-full flex flex-col items-center flex-1  max-h-[80%] pt-8 text-[#5D4840]'>
           <div className='w-[80%] flex flex-col items-center'>
             <span className='text-xl font-bold'>Olá Alícia!</span>
             <span>Essas são as pessoas que confirmaram presença na sua festa:</span>
           </div>
-          <div className='  bg-[#5D4840] w-[80%] flex-1 rounded-md my-4 overscroll-auto p-3 flex flex-col'>
+          <div className='  bg-[#5D4840]  w-[80%] rounded-md  overscroll-auto overflow-auto p-3 flex flex-col scrollbar'>
             {
               List.map((item)=> <span className='p-2 bg-[#e7dac9] shadow-lg font-bold text-lg rounded-md my-1'>{item.nome}</span>)
             }
