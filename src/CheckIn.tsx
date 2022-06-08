@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import CheckImg from './assets/check.png'
 import Carimbo from './assets/carimbo.png'
-import {  onConfirm } from './assets/utils/api'
+import {  onConfirm } from './utils/api'
 
 function CheckIn({ nomes }: any) {
 
