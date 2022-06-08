@@ -9,7 +9,7 @@ import { ConvidadoList, onList } from './utils/api'
 
 function ConfirmadosPage() {
 
-  const [Acess, setAcess] = useState<boolean>(true)
+  const [Acess, setAcess] = useState<boolean>(false)
   const [Incorret, setIncorret] = useState<boolean>(false)
   const [pass, setPass] = useState<string>('')
   const [List, setList] = useState<ConvidadoList[]>([])
