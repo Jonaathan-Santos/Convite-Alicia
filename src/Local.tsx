@@ -12,12 +12,12 @@ function Local() {
 
         
         <div className="w-[88%]  p-1 absolute top-0 bottom-0 flex flex-col justify-end">
-            <div className="w-[70%] flex justify-center items-center">
+            <div className="w-[70%] flex-1 flex justify-center items-center">
 
                 <div className="w-[70%] flex-1 flex flex-col text-xl text-center justify-center">
                     
-                    <span>Aero Bar</span>
-                    <span>(Restaurante)</span>
+                    <span>Aeroclube de Brasília</span>
+                    <span>(Bar)</span>
                 </div>
                 <img 
                     src={Point} 
