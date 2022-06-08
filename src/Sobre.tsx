@@ -23,7 +23,7 @@ function Sobre() {
                         Peço para que levem suas bebidas. Caso queira consumir no local, fica a seu critério.
                     </span>
                     <span className='text-md font-bold'>
-                        horário do batismo: 17:00h
+                        Horário do batismo: 17:00h
                     </span>
                 </div>
 

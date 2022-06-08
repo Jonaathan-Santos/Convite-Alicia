@@ -46,7 +46,7 @@ function CheckIn({ nomes }: any) {
 
                 <button
                     type='button'
-                    onClick={async () => {await onConfirm("vai que é tua"); setCheck(true)}}
+                    onClick={async () => {await onConfirm(nomes); setCheck(true)}}
                     disabled={Confirmed}
                     className='bg-[#5D4840] py-1 text-[#e8d4bb] text-xl font-semibold w-[70%] rounded-md my-2'
                 >

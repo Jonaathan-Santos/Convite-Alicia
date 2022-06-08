@@ -16,7 +16,7 @@ function Local() {
 
                 <div className="w-[70%] flex-1 flex flex-col text-xl text-center justify-center">
                     
-                    <span>Aero Club de Brasília</span>
+                    <span>Aero Bar</span>
                     <span>(Restaurante)</span>
                 </div>
                 <img 
